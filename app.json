@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "app1",
-    "slug": "app1",
+    "name": "Vidzy",
+    "scheme": "vidzy",
+    "slug": "vidzy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,8 +12,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.project.vidzy",
+      "bundleIdentifier": "com.anonymous.vidzy"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +28,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
