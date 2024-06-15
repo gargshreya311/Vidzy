@@ -18,12 +18,17 @@
     "ios": {
       "supportsTablet": true,
       "package": "com.project.vidzy",
-      "bundleIdentifier": "com.anonymous.vidzy"
+      "bundleIdentifier": "com.anonymous.vidzy",
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.project.vidzy",
+      "runtimeVersion": {
+        "policy": "appVersion"
       }
     },
     "web": {
@@ -31,6 +36,17 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6d1a1215-fe11-441a-9ace-ca8cf614168e"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6d1a1215-fe11-441a-9ace-ca8cf614168e"
+    }
   }
 }
